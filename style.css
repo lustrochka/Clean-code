@@ -46,16 +46,16 @@
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .button {
@@ -163,14 +163,14 @@ input,button{
 /* Edit Task */
 
 #edit-mode-input {
-  display:none
+  display: none
 }
 
 #edit-label {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 ul li.edit-mode label {
-  display:none;
+  display: none;
 }
