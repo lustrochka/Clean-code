@@ -21,7 +21,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { 
     text-align: center;
@@ -87,7 +87,7 @@ button{
   text-transform: uppercase;
 }
 
-.task {
+.task:nth-child(odd) {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -100,7 +100,7 @@ button{
   color: #888;
 }
 
-.task:focus {
+.task:nth-child(odd):focus {
   color: #333;
 }
 
@@ -121,7 +121,6 @@ button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,7 +137,7 @@ button{
   margin: 0 10px;
 }
 
-.task {
+.task:nth-child(even) {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -157,22 +156,26 @@ button{
 
 /* Completed */
 
-#completed-label {
+#completed-tasks .task:nth-child(even) {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-#edit-mode-input {
+.task:nth-child(odd) {
   display: none;
 }
 
-#edit-label {
+#new-task {
+  display: inline-block;
+}
+
+.edit-mode .task:nth-child(odd) {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+.edit-mode .task:nth-child(even) {
   display: none;
 }

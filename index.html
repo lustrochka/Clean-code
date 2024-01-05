@@ -13,7 +13,7 @@
 		  <div id="add-to-list">
 			  <label for="new-task" class="new-task-label">Add Item</label>
 			  <div class="task-wrapper">
-				  <input id="new-task"class="task" type="text">
+				  <input id="new-task" class="task" type="text">
 				  <button class="button">Add</button>
 			  </div>
       </div>
@@ -27,16 +27,16 @@
 				  <input type="text" class="task">
 				  <button class="button edit-button">Edit</button>
 				  <button class="button delete-button">
-					  <img src="./remove.svg" alt="remove button">
+					  <img src="./remove.svg" alt="remove button" class="remove-img">
 				  </button>
 			  </li>
         <li class="list-item edit-mode">
 				  <input type="checkbox" class="checkbox">
-				  <label class="task">Go Shopping</label>
+				  <label class="task" id="edit-label">Go Shopping</label>
 				  <input type="text" value="Go Shopping" class="task" id="edit-mode-input">
 				  <button class="button edit-button">Save</button>
 				  <button class="button delete-button">
-					  <img src="./remove.svg" alt="remove button">
+					  <img src="./remove.svg" alt="remove button" class="remove-img">
 				  </button>
 			  </li>
       </ul>
@@ -46,11 +46,11 @@
 		  <ul id="completed-tasks">
 			  <li class="list-item">
 				  <input type="checkbox" checked class="checkbox">
-				  <label class="task" id="completed-label">See the Doctor</label>
+				  <label class="task">See the Doctor</label>
 				  <input type="text" class="task">
 				  <button class="button edit-button">Edit</button>
 				  <button class="button delete-button">
-					  <img src="./remove.svg" alt="remove button">
+					  <img src="./remove.svg" alt="remove button" class="remove-img">
 				  </button>
         </li>
       </ul>
